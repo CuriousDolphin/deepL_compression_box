@@ -1,0 +1,17 @@
+model_name,node_name,device,resolution,runtime,fps,average_inference_time,average_preprocess_time,average_postprocess_time,mAP@0.5:0.95,mAP@0.5,data,model_size
+yolov5n,imx8mp,cpu,640,onnx,1.45,0.691,0.009,0.007,0.278,0.454,val2017,7.717
+yolov5n_quant,imx8mp,cpu,640,onnx,1.49,0.671,0.009,0.005,0.26,0.438,val2017,2.258
+yolov5n_quant_320,imx8mp,CPU,320,onnx,5.24,0.191,0.005,0.003,0.209,0.35,val2017,1.97
+yolov5n,imx8mp,cpu,640,tflite,0.79,1.259,0.009,0.007,0.278,0.454,val2017,3.699
+yolov5n_quant,imx8mp,cpu,640,tflite,1.21,0.826,0.009,0.008,0.259,0.431,val2017,2.127
+yolov5s,imx8mp,cpu,640,onnx,0.48,2.061,0.009,0.008,0.356,0.539,val2017,27.791
+yolov5s_quant,imx8mp,cpu,640,onnx,0.59,1.702,0.009,0.008,0.349,0.533,val2017,10.898
+yolov5s_quant_320,imx8mp,CPU,320,onnx,2.26,0.443,0.005,0.003,0.296,0.462,val2017,7.094
+yolov5s,imx8mp,cpu,640,tflite,0.43,2.335,0.009,0.006,0.363,0.547,val2017,13.919
+yolov5s_quant,imx8mp,cpu,640,tflite,0.59,1.7,0.01,0.006,0.325,0.529,val2017,7.522
+FasterRCNN,imx8mp,cpu,640,onnx,0.05,19.337,0.009,0.005,0.266,0.443,val2017,159.578
+FasterRCNN_quant,imx8mp,cpu,640,onnx,0.07,14.569,0.009,0.003,0.264,0.439,val2017,40.209
+fasterRCNN_quant_320,imx8mp,CPU,320,onnx,0.16,6.074,0.005,0.002,0.155,0.268,val2017,40.209
+ssd_mobilenet,imx8mp,cpu,640,onnx,2.22,0.451,0.002,0.001,0.137,0.216,val2017,27.919
+ssd_mobilenet_quant,imx8mp,cpu,640,onnx,2.4,0.416,0.001,0.001,0.095,0.155,val2017,8.982
+ssd_mobilenet_quant_320,imx8mp,cpu,320,onnx,2.25,0.445,0.003,0.001,0.091,0.149,val2017,8.982

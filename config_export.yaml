@@ -1,0 +1,14 @@
+config:
+  model: "yolov5l" # available: yolov5s,yolov5l,fasterRCNN, *.onnx
+  res: 640
+  prune_ug: False #0.
+  prune_s: False
+  prune_u: False
+  quant: False
+  simplify: False
+  gpu: False
+#  simplify: True
+
+# prune_s l1 structured prune
+# prune_u l1 unstructured prune
+# prune_ug global unstructured

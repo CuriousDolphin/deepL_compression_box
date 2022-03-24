@@ -1,0 +1,36 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+--extra-index-url https://google-coral.github.io/py-repo/
+tflite_runtime
+onnx>=1.9.0  # ONNX export
+onnx-simplifier>=0.3.6  # ONNX simplifier
+onnxoptimizer
+#onnxruntime>=1.9  
+numpy
+opencv-python
+pillow
+requests
+click
+onnxruntime
+#onnxruntime-gpu
+coremltools
+torch==1.7.1 # 1.7.1 need for export
+torchvision
+#tensorflow>=2.4.1  
+
+#torch==1.7.1+cu110  
+#torchvision==0.8.2+cu110  
+#torch==1.9.1+cu111 
+#torchvision==0.10.1+cu111 
+PyYAML>=5.3.1
+#seaborn
+#onnx-simplifier
+requests
+thop  # FLOPs computation
+imutils
+pafy
+youtube-dl
+# deepsparse
+
+Cython  # for pycocotools https://github.com/cocodataset/cocoapi/issues/172
+pycocotools>=2.0  # COCO mAP
+psutil

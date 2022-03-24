@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  detector:
+    build: .
+    ipc: "host"
+    command: "detect.py --model=tinyyolov2-7.onnx --save"
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            # that's the closest analogue to --gpus; provide
+            # an integer amount of devices or 'all'
+            count: 'all'
+            # Devices are reserved using a list of capabilities, making
+            # capabilities the only required field. A device MUST 
+            # satisfy all the requested capabilities for a successful 
+            # reservation.
+            capabilities: [gpu]
+
+    
+
+
